@@ -8,10 +8,13 @@
       href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.css"
       rel="stylesheet"
     />
+    <!-- Add a flickity CSS -->
+    <link rel="stylesheet" href="./flickityJS/flickity.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Document</title>
   </head>
   <body>
+    <!-- Esta es la estructura para el header -->
     <header class="header">
       <div class="burger-button">
         <i class="fas fa-bars"></i>
@@ -36,6 +39,76 @@
         </ul>
       </nav>
     </header>
+    <!-- Esta es la seccion del banner -->
+    <section class="banner">
+      <div class="banner-video">
+        <video controls>
+          <source src="./assets/video/writtingKeyBoard.mp4" type="video/mp4" />
+        </video>
+        <section class="banner-text">
+          <p>
+            Hola yo soy
+            <br />
+            Luis Quispe Rios
+            <span>Y ESTE ES MI PORTAFOLIO</span>
+          </p>
+        </section>
+      </div>
+    </section>
+    <!-- Esta es la seccion de mi portafolio -->
+    <section class="portafolio">
+      <h2 class="portafolio-title">Portafolio Destacado</h2>
+      <section class="main-carousel">
+        <div class="carousel-cell">
+          <img src="./assets/img/BlogAfrianska.PNG" alt="Afrianska blog" />
+        </div>
+        <div class="carousel-cell">
+          <img
+            src="./assets/img/chatAppChallenge.PNG"
+            alt="Chat app challenge"
+          />
+        </div>
+        <div class="carousel-cell">
+          <img
+            src="./assets/img/DogCrudChallenge.PNG"
+            alt="Dog Crud for challenge"
+          />
+        </div>
+        <div class="carousel-cell">
+          <img
+            src="./assets/img/JubListingChallengeWithVue.PNG"
+            alt="Listing Job"
+          />
+        </div>
+        <div class="carousel-cell">
+          <img
+            src="./assets/img/PachaQtecEcommerceApp.PNG"
+            alt="Ecommerce pachaqtec"
+          />
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/img/PachaTV.PNG" alt="Pacha tv" />
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/img/PlatziExChangeVue.PNG" alt="Platzi exchange" />
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/img/PlatziVideoJSVanilla.PNG" alt="Platzi video" />
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/img/ToDoListApp.PNG" alt="to do list app js" />
+        </div>
+        <div class="carousel-cell">
+          <img
+            src="./assets/img/UploadFilesChallenge.PNG"
+            alt="Upload files challenge app"
+          />
+        </div>
+      </section>
+    </section>
+    <!-- Add a flickity JS -->
+    <script src="./flickityJS/flickity.pkgd.min.js"></script>
+    <!-- My script -->
     <script src="./js/main.js"></script>
   </body>
 </html>
