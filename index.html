@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Fontawesome -->
     <link
-      href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.css"
       rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
     />
     <!-- Add a flickity CSS -->
     <link rel="stylesheet" href="./flickityJS/flickity.css" />
@@ -217,7 +219,7 @@
     </section>
 
     <!-- Esta es la seccion sobre mí -->
-    <section class="abotMe">
+    <section class="aboutMe">
       <picture>
         <img src="./assets/img/aboutMe.jpg" alt="About me" />
       </picture>
@@ -243,6 +245,74 @@
           <a href="#" class="btn btn-secondary">Descargar CV</a>
         </div>
       </section>
+    </section>
+    <!-- Esta es la seccion de servicios -->
+    <section class="myServices">
+      <h2 class="generic-title">Mis <b>Servicios</b></h2>
+      <section class="myServices-wrapper">
+        <article class="myServices-card">
+          <div class="myServices-card__icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h2>Desarrollo de landing page</h2>
+          <p>
+            Desarrollo landing page aplicando buenas practicas en css, uso
+            preprocesadores como sass o less, aplico nomenclatura de css, una
+            aquitectura de css, un patron de diseño web, enfocado a cualquier
+            tipo de dispositivo, desde mobile first y/o desktop first.
+          </p>
+        </article>
+
+        <article class="myServices-card">
+          <div class="myServices-card__icon">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <h2>Desarrollo de Web Ecommerce</h2>
+          <p>
+            Desarrollo una aplicación web para tu negocio, para poder realizar
+            esta aplicacion, uso VUE JS como herramienta principal para hacer la
+            lógica del lado del cliente, y para poder hacer la integración con
+            las api si es lo que se requiere.
+          </p>
+        </article>
+
+        <article class="myServices-card">
+          <div class="myServices-card__icon">
+            <i class="fas fa-sticky-note"></i>
+          </div>
+          <h2>Desarrollo de Blog´s</h2>
+          <p>
+            Desarrollo una blog´s interesantes y muy bonitos para tu blog, ya
+            sea para expresar tus ideas, o para conectar con gente sobre algún
+            tema en especifico.
+          </p>
+        </article>
+      </section>
+    </section>
+    <!-- Esta es la seccion de contacto -->
+    <section class="contact">
+      <h2 class="generic-title"><b>Contáctame</b></h2>
+      <form action="" class="contact-form">
+        <div>
+          <input type="text" required placeholder="Tu nombre" />
+        </div>
+        <div>
+          <input type="email" required placeholder="Tu correo" />
+        </div>
+        <div>
+          <input type="tel" required placeholder="Tu numero de celular" />
+        </div>
+        <div>
+          <textarea
+            cols="30"
+            rows="10"
+            placeholder="Escribe un mensaje"
+          ></textarea>
+        </div>
+        <div>
+          <button type="submit">Enviar mensaje</button>
+        </div>
+      </form>
     </section>
     <!-- Add a flickity JS -->
     <script src="./flickityJS/flickity.pkgd.min.js"></script>
