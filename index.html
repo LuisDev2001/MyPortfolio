@@ -24,25 +24,26 @@
       <nav class="menu">
         <ul class="menu-list">
           <li class="menu-item">
-            <a href="#" class="menu-link"> Inicio </a>
+            <a href="#home" class="menu-link"> Inicio </a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link"> Portafolio </a>
+            <a href="#portfolio" class="menu-link"> Portafolio </a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link"> Resumen </a>
+            <a href="#resume" class="menu-link"> Resumen </a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link"> Sobre mí </a>
+            <a href="#about-me" class="menu-link"> Sobre mí </a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link"> Contactame </a>
+            <a href="#contact" class="menu-link"> Contactame </a>
           </li>
         </ul>
       </nav>
     </header>
+
     <!-- Esta es la seccion del banner -->
-    <section class="banner">
+    <section class="banner" id="home">
       <div class="banner-video">
         <video autoplay loop muted>
           <source src="./assets/video/writtingKeyBoard.mp4" type="video/mp4" />
@@ -58,8 +59,9 @@
         </p>
       </section>
     </section>
+
     <!-- Esta es la seccion de mi portafolio -->
-    <section class="portafolio">
+    <section class="portafolio" id="portfolio">
       <h2 class="generic-title">Portafolio <b>Destacado</b></h2>
       <section class="main-carousel" data-flickity='{ "autoPlay": true }'>
         <div class="carousel-cell">
@@ -109,8 +111,9 @@
         </div>
       </section>
     </section>
+
     <!-- Esta es la seccion de mi resumen -->
-    <section class="resume">
+    <section class="resume" id="resume">
       <h2 class="generic-title">Mi <b>Resumen</b></h2>
       <section class="resume-container">
         <section class="education">
@@ -156,8 +159,8 @@
                 gracias a una beca de la institución PRONABEC obtuve una beca de
                 educación tecnica, escogí estudiar la carrera de desarrollo de
                 aplicaciones web en la sede de San Juan de Miraflores,
-                aprendiendo cursos de informativa basica y avanzada, en esta
-                etapa me encanto perdidamente el desarrollo web, actualmente
+                aprendiendo cursos de informática básica y avanzada, en esta
+                etapa me encantó perdidamente el desarrollo web, actualmente
                 sigo en formación para poder sacar mi título como técnico a
                 nombre de la nación.
               </p>
@@ -196,9 +199,9 @@
               <h2>Voluntario en Tecnologia (Backup)</h2>
               <p>
                 Fuí voluntario de tecnologia en los juego panamericanos Lima
-                2019, trabaje con la gente ATOS encargados del sistema de
-                puntuación de la sede de Surf, aprendi mucho en esta grata a
-                experiencia.
+                2019, trabaje con la gente de ATOS encargados del sistema de
+                puntuación de la sede de Surf - Punta Rocas, aprendí mucho en
+                esta grata a experiencia.
               </p>
               <span>Perú, Lima, Lurín</span>
             </article>
@@ -214,7 +217,7 @@
                 empresa Avatar Global, al incio fue un poco dificil adaptarme al
                 tipo de trabajo, con el pasar del tiempo fui agarrando la onda y
                 pues cada dia que pasa es un reto más. Si lees esto desde aqui
-                te digo, no te rindas y nunca dejes de aprender. La unica manera
+                te digo, no te rindas y nunca dejes de aprender. La única manera
                 de progresar en este mundo del desarrollo web es seguir
                 aprendiendo.
               </p>
@@ -226,7 +229,7 @@
     </section>
 
     <!-- Esta es la seccion sobre mí -->
-    <section class="aboutMe">
+    <section class="aboutMe" id="about-me">
       <picture>
         <img src="./assets/img/aboutMe.jpg" alt="About me" />
       </picture>
@@ -234,7 +237,7 @@
         <h2 class="generic-title">Sobre <b>Mí</b></h2>
         <p>
           Nací un 12 de Setiembre del 2001 en la maternidad de Lima, mis padres
-          mi educaron y cuidaron. Actualmente vivo en el distrito de Lurin,
+          me educaron y cuidaron. Actualmente vivo en el distrito de Lurin,
           crecí en contacto desde muy chico con una computadora, desde el inicio
           me gustaron los videojuegos y poco a poco fui introduciendome mas en
           este maravilloso mundo de la computacion e informatica.
@@ -243,7 +246,8 @@
           En mis tiempos libres me gusta tocar guitarra, escuchar musica, ver
           videos de youtube, escuchar música, pasar el rato en redes sociales,
           generar contenido para mi canal de youtube, salir a caminar para
-          despejar la mente y obviamente programar.
+          despejar la mente y obviamente desarrollar web / challenge´s e, html,
+          css, js ó Vue JS.
         </p>
         <section class="aboutMe-information-buttons">
           <div>
@@ -255,6 +259,7 @@
         </section>
       </section>
     </section>
+
     <!-- Esta es la seccion de servicios -->
     <section class="myServices">
       <h2 class="generic-title">Mis <b>Servicios</b></h2>
@@ -269,6 +274,9 @@
             preprocesadores como sass o less, aplico nomenclatura de css, una
             aquitectura de css, un patron de diseño web, enfocado a cualquier
             tipo de dispositivo, desde mobile first y/o desktop first.
+            <!-- Tambien
+            con VUE JS (CDN) por si se require traer informacion desde un
+            formulario de contacto o una subscripción a un newsletter. -->
           </p>
         </article>
 
@@ -279,9 +287,9 @@
           <h2>Desarrollo de Web Ecommerce</h2>
           <p>
             Desarrollo una aplicación web para tu negocio, para poder realizar
-            esta aplicacion, uso VUE JS como herramienta principal para hacer la
-            lógica del lado del cliente, y para poder hacer la integración con
-            las api si es lo que se requiere.
+            esta aplicacion, uso VUE JS (CLI )como herramienta principal para
+            hacer la lógica del lado del cliente, y para poder hacer la
+            integración con las api´s con VUEX si es lo que se requiere.
           </p>
         </article>
 
@@ -293,12 +301,16 @@
           <p>
             Desarrollo unos blog´s interesantes y muy bonitos para tu blog
             personal, ya sea para expresar tus ideas, o para conectar con gente
-            sobre algún tema en especifico.
+            sobre algún tema en especifico. Echo con HTML, CSS, JavaScript, si
+            hay alguna integración con servicios, uso VUE JS (CDN), para
+            agilizar el desarrollo.
           </p>
         </article>
       </section>
     </section>
-    <section class="contact-me">
+
+    <!-- Esta es la seccion de contacto -->
+    <section class="contact-me" id="contact">
       <h2 class="generic-title">Ponerse en <b>Contacto</b></h2>
 
       <section class="contact-me-wrapper">
@@ -339,7 +351,7 @@
             </div>
             <div class="footer-details-content">
               <h4>Celular</h4>
-              <p>+51 988400110</p>
+              <p>+51 988 400 110</p>
             </div>
             <div class="footer-details-content">
               <h4>Dirección</h4>
