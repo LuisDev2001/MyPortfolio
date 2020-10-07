@@ -124,16 +124,22 @@
 }
 .banner {
   padding: 0;
-}
-.banner-video {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+.banner-video {
+  width: 100%;
+  height: 100vh;
 }
 .banner-video video {
   position: relative;
   opacity: 0.3;
-  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: unset;
 }
 .banner-text {
   position: absolute;
