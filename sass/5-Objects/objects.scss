@@ -15,12 +15,23 @@ footer {
   border: 1px solid;
   transition: 0.3s ease-in-out all;
   padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &-primary {
     background: var(--green-two);
     border-color: var(--green-two);
     color: var(--white);
     &:hover {
       background: #b2c251;
+    }
+  }
+  &-secondary {
+    background-color: var(--gray);
+    border-color: var(--gray);
+    color: var(--white);
+    &:hover {
+      background-color: #5a6268;
     }
   }
 }
