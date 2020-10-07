@@ -1,0 +1,56 @@
+.banner {
+  padding: 0;
+  &-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    video {
+      position: relative;
+      opacity: 0.3;
+      width: 100%;
+    }
+  }
+  &-text {
+    position: absolute;
+    z-index: 50;
+    p {
+      color: var(--white);
+      text-align: center;
+      font-size: 35px;
+      line-height: 1.5;
+      b {
+        font-weight: bold;
+      }
+      span {
+        font-size: 16px;
+        letter-spacing: 0.2rem;
+        color: var(--white);
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+//Tablet
+@media screen and (min-width: 768px) {
+  .banner {
+    &-text {
+      p {
+        font-size: 65px;
+        span {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+//Desktop
+@media screen and (min-width: 992px) {
+  .banner {
+    &-text {
+      p {
+        font-size: 75px;
+      }
+    }
+  }
+}

@@ -122,6 +122,52 @@
     height: 100%;
   }
 }
+.banner {
+  padding: 0;
+}
+.banner-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-video video {
+  position: relative;
+  opacity: 0.3;
+  width: 100%;
+}
+.banner-text {
+  position: absolute;
+  z-index: 50;
+}
+.banner-text p {
+  color: var(--white);
+  text-align: center;
+  font-size: 35px;
+  line-height: 1.5;
+}
+.banner-text p b {
+  font-weight: bold;
+}
+.banner-text p span {
+  font-size: 16px;
+  letter-spacing: 0.2rem;
+  color: var(--white);
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-text p {
+    font-size: 65px;
+  }
+  .banner-text p span {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .banner-text p {
+    font-size: 75px;
+  }
+}
 @media screen and (min-width: 768px) {
   .contact-me {
     padding: 0;
