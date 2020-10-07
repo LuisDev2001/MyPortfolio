@@ -1,6 +1,14 @@
 /*
   * Elementos desnudos de HTML
 */
+body {
+  font-family: var(--font-family-sans-serif);
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 1;
+  background: var(--dark);
+  color: var(--white-two);
+}
 p,
 h1,
 h2,
@@ -9,10 +17,6 @@ h4,
 h5,
 h6 {
   margin: 0;
-}
-
-img {
-  display: block;
 }
 
 li {

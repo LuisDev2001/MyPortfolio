@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"form.css"}
+{"version":3,"sourceRoot":"","sources":["../../../sass/6-components/sectionform/form.scss"],"names":[],"mappings":"AAAA;EACE;;AACA;EACE;EACA;EACA;;AAGA;EACE;EACA;;AACA;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AACA;AAAA;AAAA;EAEE;;AAGJ;EACE;EACA;;AAEF;EACE;EACA","file":"form.css"}

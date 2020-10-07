@@ -1,14 +1,39 @@
+//Spacing for each section
+header,
+section,
+footer {
+  padding: 0 15px;
+}
+//Styles for primary, secondary button
+.btn {
+  border-radius: 100px;
+  border: 0;
+  background: none;
+  font-size: 12px;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  border: 1px solid;
+  transition: 0.3s ease-in-out all;
+  padding: 16px 24px;
+  &-primary {
+    background: var(--green-two);
+    border-color: var(--green-two);
+    color: var(--white);
+    &:hover {
+      background: #b2c251;
+    }
+  }
+}
 /*
-  * Patron de diseño orientado a parrilla de 
-  * productos con flexbox (Mobile First)
+  * Patron de diseño grid
+  * (Mobile First)
 */
 .grid {
   width: 100%;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
 }
 
 .grid .item {
@@ -17,19 +42,19 @@
 }
 /*Tablet*/
 @media screen and (min-width: 768px) {
-  .grid .item {
-    width: calc(50% - 15px);
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /*Desktop*/
 @media screen and (min-width: 992px) {
-  .grid .item {
-    width: calc(33% - 15px);
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 /*Large Desktop*/
 @media screen and (min-width: 1200px) {
-  .grid .item {
-    width: calc(25% - 15px);
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

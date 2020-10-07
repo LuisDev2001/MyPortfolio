@@ -289,49 +289,58 @@
         </article>
       </section>
     </section>
-    <!-- Esta es la seccion de contacto -->
-    <section class="contact">
-      <h2 class="generic-title"><b>Contáctame</b></h2>
-      <form action="" class="contact-form">
-        <div>
-          <input type="text" required placeholder="Tu nombre" />
-        </div>
-        <div>
-          <input type="email" required placeholder="Tu correo" />
-        </div>
-        <div>
-          <input type="tel" required placeholder="Tu numero de celular" />
-        </div>
-        <div>
-          <textarea
-            cols="30"
-            rows="10"
-            placeholder="Escribe un mensaje"
-          ></textarea>
-        </div>
-        <div>
-          <button type="submit">Enviar mensaje</button>
-        </div>
-      </form>
-    </section>
-    <!-- Esta es la seccion del footer -->
-    <footer class="footer">
-      <h2>Detalles de contacto</h2>
-      <div class="footer-details">
-        <div class="footer-details-content">
-          <h4>EMAIL</h4>
-          <p class="footer-details-content-email"></p>
-        </div>
-        <div class="footer-details-content">
-          <h4>Celular</h4>
-          <p>+51 988400110</p>
-        </div>
-        <div class="footer-details-content">
-          <h4>Dirección</h4>
-          <p>Asoc. de Vivienda los claveles de Lurín Mz. N Lt. 13</p>
-        </div>
-      </div>
-      <div class="footer-social-media">
+    <section class="contact-me">
+      <h2 class="generic-title">Ponerse en <b>Contacto</b></h2>
+
+      <section class="contact-me-wrapper">
+        <!-- Esta es la seccion de contacto -->
+        <section class="contact">
+          <h2 class="generic-title"><b>Contáctame</b></h2>
+          <form action="" class="contact-form">
+            <div>
+              <input type="text" required placeholder="Tu nombre" />
+            </div>
+            <div>
+              <input type="email" required placeholder="Tu correo" />
+            </div>
+            <div>
+              <input type="tel" required placeholder="Tu numero de celular" />
+            </div>
+            <div>
+              <textarea
+                cols="30"
+                rows="10"
+                placeholder="Escribe un mensaje"
+              ></textarea>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-primary">
+                Enviar mensaje
+              </button>
+            </div>
+          </form>
+        </section>
+        <!-- Esta es la seccion del footer -->
+        <footer class="footer">
+          <h2>Detalles de contacto</h2>
+          <div class="footer-details">
+            <div class="footer-details-content">
+              <h4>EMAIL</h4>
+              <p class="footer-details-content-email"></p>
+            </div>
+            <div class="footer-details-content">
+              <h4>Celular</h4>
+              <p>+51 988400110</p>
+            </div>
+            <div class="footer-details-content">
+              <h4>Dirección</h4>
+              <p>Asoc. de Vivienda los claveles de Lurín Mz. N Lt. 13</p>
+            </div>
+          </div>
+        </footer>
+      </section>
+
+      <section class="footer-social-media">
         <div class="footer-social-media__icon">
           <a href="https://www.facebook.com/QUISPELUIS.9FCB/">
             <i class="fab fa-facebook-f"></i>
@@ -361,8 +370,8 @@
             <i class="fab fa-youtube"></i>
           </a>
         </div>
-      </div>
-    </footer>
+      </section>
+    </section>
     <!-- Add a flickity JS -->
     <script src="./flickityJS/flickity.pkgd.min.js"></script>
     <!-- My script -->
