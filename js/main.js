@@ -2,6 +2,7 @@
   console.log("JS Connect!! :)");
   const $burgerButton = document.querySelector("#js_burger-button");
   const $header = document.querySelector("#js_header");
+  const $menu = document.querySelector("#js_menu");
   const $menuLinks = Array.from(document.querySelectorAll(".menu-link"));
   //Event click for each links of menu
   $menuLinks.forEach((links) => {
@@ -11,6 +12,7 @@
       } else {
         removeClassIsActive();
         links.classList.add("is-active");
+        $menu.classList.remove("is-active");
       }
     });
   });
@@ -28,7 +30,6 @@
   //Function showHideMenu
   function showHideMenu(e) {
     e.preventDefault();
-    const $menu = document.querySelector("#js_menu");
     $menu.classList.toggle("is-active");
   }
   //Event click for show and hide menu
