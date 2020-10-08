@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  transition: 0.3s ease all;
   .burger-button {
     width: 56px;
     height: 40px;
@@ -14,6 +15,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
     i {
       font-size: 1.8rem;
       color: #7f7f7f;
@@ -37,6 +39,9 @@
         overflow: visible;
         opacity: 1;
         max-height: 280px;
+        .menu-item {
+          opacity: 1;
+        }
       }
     }
     &-item {
@@ -45,17 +50,25 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      opacity: 0;
+      transition: all 0.4s ease-out;
     }
     &-link {
       text-transform: uppercase;
       letter-spacing: 2px;
       color: var(--gray-dark);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      height: 100%;
     }
   }
   &.fixed {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 99;
   }
 }
 //Desktop
@@ -88,6 +101,7 @@
         position: relative;
         overflow: hidden;
         width: 150px;
+        opacity: 1;
         &::before,
         &::after {
           content: "";
@@ -122,6 +136,19 @@
         justify-content: center;
         width: 100%;
         height: 100%;
+      }
+    }
+    &.fixed {
+      background: var(--white);
+      max-width: unset;
+      margin: 0;
+      .menu {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0;
+        &-link {
+          color: var(--dark-three);
+        }
       }
     }
   }
