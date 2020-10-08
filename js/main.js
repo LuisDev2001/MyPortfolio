@@ -5,11 +5,7 @@
   //Function header fixed
   window.addEventListener("scroll", () => {
     let y = window.scrollY;
-    if (y > 56) {
-      $header.classList.add("fixed");
-    } else {
-      $header.classList.remove("fixed");
-    }
+    y > 56 ? $header.classList.add("fixed") : $header.classList.remove("fixed");
   });
   //Function showHideMenu
   function showHideMenu(e) {
