@@ -69,6 +69,36 @@ footer {
 }
 
 /*
+  * Labels for portafolio :)
+*/
+.item-information-label {
+  width: auto;
+  height: auto;
+  font-size: 15px;
+  padding: 7px 14px;
+  margin: 0 5px 8px 0;
+  display: inline-block;
+  border-radius: 10px;
+  color: var(--white);
+  font-weight: 600;
+}
+.item-information-label.html {
+  background: #e96228;
+}
+.item-information-label.css {
+  background: #2862e9;
+}
+.item-information-label.sass {
+  background: #c76494;
+}
+.item-information-label.js {
+  background: #efd81d;
+}
+.item-information-label.vue {
+  background: #3fb27f;
+}
+
+/*
   * Patron de diseño grid
   * (Mobile First)
 */
@@ -82,7 +112,6 @@ footer {
 
 .grid .item {
   width: 100%;
-  height: 250px;
 }
 
 /*Tablet*/

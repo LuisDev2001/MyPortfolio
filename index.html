@@ -10,8 +10,6 @@
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
-    <!-- Add a flickity CSS -->
-    <link rel="stylesheet" href="./flickityJS/flickity.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Mi portafolio LuisDev2001</title>
   </head>
@@ -63,51 +61,165 @@
     <!-- Esta es la seccion de mi portafolio -->
     <section class="portafolio" id="portfolio">
       <h2 class="generic-title">Portafolio <b>Destacado</b></h2>
-      <section class="main-carousel" data-flickity='{ "autoPlay": true }'>
-        <div class="carousel-cell">
-          <img src="./assets/img/BlogAfrianska.PNG" alt="Afrianska blog" />
+      <section class="main-carousel portafolio-wrapper grid">
+        <div class="item">
+          <div class="item-image">
+            <img src="./assets/img/BlogAfrianska.PNG" alt="Afrianska blog" />
+          </div>
+          <div class="item-information">
+            <h3>Blog afrianska</h3>
+            <div class="item-information-made">
+              <h4>Hecho en:</h4>
+              <span class="item-information-label html">HTML5</span>
+              <span class="item-information-label sass">SASS</span>
+            </div>
+          </div>
         </div>
-        <div class="carousel-cell">
-          <img
-            src="./assets/img/chatAppChallenge.PNG"
-            alt="Chat app challenge"
-          />
+        <div class="item">
+          <div class="item-image">
+            <img
+              src="./assets/img/chatAppChallenge.PNG"
+              alt="Chat app challenge"
+            />
+          </div>
+          <div class="item-information">
+            <h3>Landing Simple booking</h3>
+            <div class="item-information-made">
+              <h4>Hecho en:</h4>
+              <span class="item-information-label html">HTML5</span>
+              <span class="item-information-label css">CSS</span>
+            </div>
+          </div>
         </div>
-        <div class="carousel-cell">
-          <img
-            src="./assets/img/DogCrudChallenge.PNG"
-            alt="Dog Crud for challenge"
-          />
+        <div class="item">
+          <div class="item-image">
+            <img
+              src="./assets/img/DogCrudChallenge.PNG"
+              alt="Dog Crud for challenge"
+            />
+          </div>
+          <div class="item-information">
+            <h3>Dog CRUD</h3>
+            <div class="item-information-made">
+              <h4>Hecho en:</h4>
+              <span class="item-information-label html">HTML5</span>
+              <span class="item-information-label css">CSS</span>
+              <span class="item-information-label js">JavaScript</span>
+            </div>
+          </div>
         </div>
-        <div class="carousel-cell">
-          <img
-            src="./assets/img/JubListingChallengeWithVue.PNG"
-            alt="Listing Job"
-          />
+        <div class="item">
+          <div class="item-image">
+            <img
+              src="./assets/img/JubListingChallengeWithVue.PNG"
+              alt="Listing Job"
+            />
+          </div>
+          <div class="item-information">
+            <h3>Listing job finder</h3>
+            <div class="item-information-made">
+              <h4>Hecho en:</h4>
+              <span class="item-information-label vue">VUE (CDN)</span>
+              <span class="item-information-label css">CSS</span>
+              <span class="item-information-label js">JavaScript</span>
+            </div>
+          </div>
         </div>
-        <div class="carousel-cell">
-          <img
-            src="./assets/img/PachaQtecEcommerceApp.PNG"
-            alt="Ecommerce pachaqtec"
-          />
+        <div class="item">
+          <div class="item-image">
+            <img
+              src="./assets/img/PachaQtecEcommerceApp.PNG"
+              alt="Ecommerce pachaqtec"
+            />
+          </div>
+          <div class="item-information">
+            <h3>Pachaqtec Marketplace</h3>
+            <div class="item-information-made">
+              <h4>Hecho en:</h4>
+              <span class="item-information-label vue">VUE (CLI)</span>
+              <span class="item-information-label vue">VUEX (CLI)</span>
+              <span class="item-information-label css">CSS</span>
+              <span class="item-information-label js">JavaScript</span>
+            </div>
+          </div>
         </div>
-        <div class="carousel-cell">
-          <img src="./assets/img/PachaTV.PNG" alt="Pacha tv" />
+        <div class="item">
+          <div class="item-image">
+            <img src="./assets/img/PachaTV.PNG" alt="Pacha tv" />
+          </div>
+          <div class="item-information">
+            <h3>Pacha Video</h3>
+            <div class="item-information-made">
+              <h4>Hecho en:</h4>
+              <span class="item-information-label vue">VUE (CLI)</span>
+              <span class="item-information-label sass">SASS</span>
+              <span class="item-information-label js">JavaScript</span>
+            </div>
+          </div>
         </div>
-        <div class="carousel-cell">
-          <img src="./assets/img/PlatziExChangeVue.PNG" alt="Platzi exchange" />
+        <div class="item">
+          <div class="item-image">
+            <img
+              src="./assets/img/PlatziExChangeVue.PNG"
+              alt="Platzi exchange"
+            />
+          </div>
+          <div class="item-information">
+            <h3>Platzi exchange</h3>
+            <div class="item-information-made">
+              <h4>Hecho en:</h4>
+              <span class="item-information-label vue">VUE (CLI)</span>
+              <span class="item-information-label css">CSS</span>
+              <span class="item-information-label js">JavaScript</span>
+            </div>
+          </div>
         </div>
-        <div class="carousel-cell">
-          <img src="./assets/img/PlatziVideoJSVanilla.PNG" alt="Platzi video" />
+        <div class="item">
+          <div class="item-image">
+            <img
+              src="./assets/img/PlatziVideoJSVanilla.PNG"
+              alt="Platzi video"
+            />
+          </div>
+          <div class="item-information">
+            <h3>Platzi video</h3>
+            <div class="item-information-made">
+              <h4>Hecho en:</h4>
+              <span class="item-information-label html">HTML5</span>
+              <span class="item-information-label css">CSS</span>
+              <span class="item-information-label js">JavaScript</span>
+            </div>
+          </div>
         </div>
-        <div class="carousel-cell">
-          <img src="./assets/img/ToDoListApp.PNG" alt="to do list app js" />
+        <div class="item">
+          <div class="item-image">
+            <img src="./assets/img/ToDoListApp.PNG" alt="to do list app js" />
+          </div>
+          <div class="item-information">
+            <h3>To do list</h3>
+            <div class="item-information-made">
+              <h4>Hecho en:</h4>
+              <span class="item-information-label html">HTML5</span>
+              <span class="item-information-label css">CSS</span>
+              <span class="item-information-label js">JavaScript</span>
+            </div>
+          </div>
         </div>
-        <div class="carousel-cell">
-          <img
-            src="./assets/img/UploadFilesChallenge.PNG"
-            alt="Upload files challenge app"
-          />
+        <div class="item">
+          <div class="item-image">
+            <img
+              src="./assets/img/UploadFilesChallenge.PNG"
+              alt="Upload files challenge app"
+            />
+          </div>
+          <div class="item-information">
+            <h3>Upload files challenge app</h3>
+            <div class="item-information-made">
+              <h4>Hecho en:</h4>
+              <span class="item-information-label html">HTML5</span>
+              <span class="item-information-label css">CSS</span>
+            </div>
+          </div>
         </div>
       </section>
     </section>
@@ -399,8 +511,6 @@
         <i class="fas fa-chevron-up"></i>
       </div>
     </div>
-    <!-- Add a flickity JS -->
-    <script src="./flickityJS/flickity.pkgd.min.js"></script>
     <!-- My script -->
     <script src="./js/main.js"></script>
   </body>
