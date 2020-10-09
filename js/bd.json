@@ -1,0 +1,72 @@
+{
+  "response": [
+    {
+      "item-title": "Blog afrianska",
+      "src": "./../assets/img/BlogAfrianska.PNG",
+      "made-label-html": "HTML",
+      "made-label-sass": "SASS"
+    },
+    {
+      "item-title": "Landing Simple booking",
+      "src": "./../assets/img/chatAppChallenge.PNG",
+      "made-label-html": "HTML",
+      "made-label-sass": "SASS"
+    },
+    {
+      "item-title": "Dog CRUD",
+      "src": "./../assets/img/DogCrudChallenge.PNG",
+      "made-label-html": "HTML",
+      "made-label-sass": "SASS",
+      "made-label-js": "JavaScript"
+    },
+    {
+      "item-title": "Listing job finder",
+      "src": "./../assets/img/JubListingChallengeWithVue.PNG",
+      "made-label-vue": "VUE (CDN)",
+      "made-label-css": "CSS",
+      "made-label-js": "JavaScript"
+    },
+    {
+      "item-title": "Pachaqtec Marketplace",
+      "src": "./../assets/img/PachaQtecEcommerceApp.PNG",
+      "made-label-vue": "VUE (CLI)",
+      "made-label-vuex": "VUEX (CLI)",
+      "made-label-css": "CSS",
+      "made-label-js": "JavaScript"
+    },
+    {
+      "item-title": "Pacha Video",
+      "src": "./../assets/img/PachaTV.PNG",
+      "made-label-vue": "VUE (CLI)",
+      "made-label-sass": "SASS",
+      "made-label-js": "JavaScript"
+    },
+    {
+      "item-title": "Platzi exchange",
+      "src": "./../assets/img/PlatziExChangeVue.PNG",
+      "made-label-vue": "VUE (CLI)",
+      "made-label-css": "CSS",
+      "made-label-js": "JavaScript"
+    },
+    {
+      "item-title": "Platzi video",
+      "src": "./../assets/img/PlatziVideoJSVanilla.PNG",
+      "made-label-html": "HTML",
+      "made-label-css": "CSS",
+      "made-label-js": "JavaScript"
+    },
+    {
+      "item-title": "To do list",
+      "src": "./../assets/img/ToDoListApp.PNG",
+      "made-label-html": "HTML",
+      "made-label-css": "CSS",
+      "made-label-js": "JavaScript"
+    },
+    {
+      "item-title": "Upload files challenge app",
+      "src": "./../assets/img/UploadFilesChallenge.PNG",
+      "made-label-html": "HTML",
+      "made-label-css": "CSS"
+    }
+  ]
+}
