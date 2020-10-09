@@ -4,6 +4,23 @@
   const $header = document.querySelector("#js_header");
   const $menu = document.querySelector("#js_menu");
   const $menuLinks = Array.from(document.querySelectorAll(".menu-link"));
+  const $btnReturnTop = document.querySelector("#js_return-top");
+
+  window.addEventListener("scroll", () => {
+    let y = window.scrollY;
+    y > 550
+      ? $btnReturnTop.classList.add("active")
+      : $btnReturnTop.classList.remove("active");
+    //Event click for appear btn return top
+    $btnReturnTop.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.scroll({
+        top: `${100}%`,
+        behavior: "smooth",
+      });
+    });
+  });
+
   //Event click for each links of menu
   $menuLinks.forEach((links) => {
     links.addEventListener("click", (e) => {
