@@ -79,19 +79,20 @@ footer {
   border-radius: 10px;
   color: var(--white);
   font-weight: 600;
-  &.html {
+  &.HTML {
     background: #e96228;
   }
-  &.css {
+  &.CSS {
     background: #2862e9;
   }
-  &.sass {
+  &.SASS {
     background: #c76494;
   }
-  &.js {
+  &.JavaScript {
     background: #efd81d;
   }
-  &.vue {
+  &.VUE,
+  &.VUEX {
     background: #3fb27f;
   }
 }

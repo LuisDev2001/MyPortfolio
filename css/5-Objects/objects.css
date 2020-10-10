@@ -82,19 +82,19 @@ footer {
   color: var(--white);
   font-weight: 600;
 }
-.item-information-label.html {
+.item-information-label.HTML {
   background: #e96228;
 }
-.item-information-label.css {
+.item-information-label.CSS {
   background: #2862e9;
 }
-.item-information-label.sass {
+.item-information-label.SASS {
   background: #c76494;
 }
-.item-information-label.js {
+.item-information-label.JavaScript {
   background: #efd81d;
 }
-.item-information-label.vue {
+.item-information-label.VUE, .item-information-label.VUEX {
   background: #3fb27f;
 }
 

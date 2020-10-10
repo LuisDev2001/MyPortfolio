@@ -5,7 +5,58 @@
   const $menu = document.querySelector("#js_menu");
   const $menuLinks = Array.from(document.querySelectorAll(".menu-link"));
   const $btnReturnTop = document.querySelector("#js_return-top");
+  const $portFolioContainer = document.querySelector("#js_portfolio-container");
 
+  /*
+   * Function get information for my own bd.json
+   */
+  async function getInformationPortfolio() {
+    try {
+      const data = await fetch("./js/bd.json");
+      const information = await data.json();
+      const response = await information.response;
+      return response;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  async function renderInformationPortfolio() {
+    const data = await getInformationPortfolio();
+    for (const d of data) {
+      $portFolioContainer.innerHTML += `
+        <div class="item">
+          <div class="item-image">
+            <img src="${d.src}" alt="Afrianska blog" />
+          </div>
+          <div class="item-information">
+            <h3>${d.itemTitle}</h3>
+            <div class="item-information-made">
+              <h4>Hecho en:</h4>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+    const $madeWrapper = document.querySelectorAll(".item-information-made");
+    $madeWrapper.forEach((element, i) => {
+      const div = document.createElement("div");
+      div.setAttribute("class", "labels");
+      element.appendChild(div);
+      let labels = data[i].labels;
+      console.log(labels);
+
+      for (const label in labels) {
+        let labelText = `${labels[label]}`;
+        console.log(labelText);
+        let template = `
+              <span class="item-information-label ${labelText}">${labelText}</span>
+            `;
+        div.innerHTML += template;
+      }
+    });
+  }
+  renderInformationPortfolio();
   /*
    * Function for remove active state links menu
    */
