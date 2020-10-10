@@ -47,11 +47,9 @@
       div.setAttribute("class", "labels");
       element.appendChild(div);
       let labels = data[i].labels;
-      console.log(labels);
 
       for (const label in labels) {
         let labelText = `${labels[label]}`;
-        console.log(labelText);
         let template = `
               <span class="item-information-label ${labelText}">${labelText}</span>
             `;
