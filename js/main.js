@@ -21,6 +21,9 @@
     }
   }
 
+  /*
+   * Function to render information to my own api
+   */
   async function renderInformationPortfolio() {
     const data = await getInformationPortfolio();
     for (const d of data) {
@@ -56,7 +59,7 @@
       }
     });
   }
-  renderInformationPortfolio();
+
   /*
    * Function for remove active state links menu
    */
@@ -66,6 +69,9 @@
     });
   }
 
+  /*
+   * Function to put class 'fixed'
+   */
   function headerFixed() {
     let y = window.scrollY;
     y > 56 ? $header.classList.add("fixed") : $header.classList.remove("fixed");
@@ -123,4 +129,9 @@
    *Event click for show and hide menu
    */
   $burgerButton.addEventListener("click", showHideMenu);
+
+  /*
+   * Executed function renderInformationPortfolio
+   */
+  renderInformationPortfolio();
 })();
