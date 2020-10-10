@@ -30,7 +30,7 @@
       $portFolioContainer.innerHTML += `
         <div class="item">
           <div class="item-image">
-            <img src="${d.src}" alt="Afrianska blog" />
+            <img loading="lazy" src="${d.src}" alt="Afrianska blog" />
           </div>
           <div class="item-information">
             <h3>${d.itemTitle}</h3>
