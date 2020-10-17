@@ -1,0 +1,56 @@
+.footer {
+  width: 100%;
+}
+.footer > h2 {
+  color: var(--white);
+  font-size: 28px;
+  margin: 0 0 48px 0;
+}
+.footer-details-content {
+  margin: 0 0 20px 0;
+}
+.footer-details-content > h4 {
+  margin: 0 0 10px 0;
+  font-size: 12px;
+  color: var(--cyan-dark);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.footer-details-content-email::before {
+  content: "luisqrja@gmail.com";
+  color: inherit;
+}
+.footer-social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 48px 0;
+  max-width: 420px;
+  margin: 0 auto;
+}
+.footer-social-media__icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--dark-three);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease all;
+}
+.footer-social-media__icon:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.footer-social-media__icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.footer-social-media__icon a i {
+  color: var(--green-two);
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=footer.css.map */

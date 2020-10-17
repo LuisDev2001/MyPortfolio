@@ -1,0 +1,62 @@
+.aboutMe {
+  padding: 80px 15px;
+}
+.aboutMe picture {
+  display: block;
+  padding: 0 10px;
+}
+.aboutMe picture img {
+  height: auto;
+  margin: 0 0 3rem 0;
+}
+.aboutMe .generic-title {
+  text-align: left;
+}
+.aboutMe-information {
+  padding: 0;
+}
+.aboutMe-information p {
+  margin: 0 0 1rem 0;
+  line-height: 1.7;
+  font-size: 16px;
+}
+.aboutMe-information-buttons {
+  display: flex;
+  padding: 0;
+  margin: 48px 0 0 0;
+}
+.aboutMe-information-buttons div {
+  width: auto;
+  height: auto;
+  display: flex;
+}
+.aboutMe-information-buttons div:first-child {
+  margin: 0 8px 0 0;
+}
+.aboutMe-information-buttons div .btn {
+  padding: 8px 24px;
+  height: 36px;
+}
+
+@media screen and (min-width: 992px) {
+  .aboutMe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .aboutMe picture {
+    padding: 0 15px;
+    width: 45%;
+  }
+  .aboutMe picture img {
+    margin: 0;
+  }
+  .aboutMe-information {
+    padding: 0 15px;
+    width: 40%;
+  }
+}
+
+/*# sourceMappingURL=aboutMe.css.map */
