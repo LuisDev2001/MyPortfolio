@@ -1,3 +1,8 @@
+/**
+ * Import my own css for webpack
+ */
+import "../css/main.css";
+
 (function init() {
   console.log("JS Connect!! :)");
   const $burgerButton = document.querySelector("#js_burger-button");
