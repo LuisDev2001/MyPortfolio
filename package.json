@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:css-dev": "sass --watch src/sass:src/css",
-    "build": "webpack --config webpack.config.js"
+    "build:project": "webpack-dev-server --config webpack.config.js --open"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "sass": "1.27.0",
     "style-loader": "2.0.0",
     "webpack": "4.32.2",
-    "webpack-cli": "3.3.2"
+    "webpack-cli": "3.3.2",
+    "webpack-dev-server": "3.5.1"
   }
 }

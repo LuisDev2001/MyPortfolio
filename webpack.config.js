@@ -14,6 +14,11 @@ module.exports = {
     filename: "js/[name].js",
   },
   mode: "development",
+  devServer: {
+    contentBase: path.join('./src'),
+    hot: true,
+    port: 9000,
+  },
   module: {
     rules: [
       {
@@ -34,10 +39,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Mi portafolio",
       template: path.resolve(__dirname, 'src/index.html'),
-      minify: {
+      /*minify: {
         //Minificar mi html para producción
         collapseWhitespace: true,
-      }
+      }*/
     })
   ]
 };

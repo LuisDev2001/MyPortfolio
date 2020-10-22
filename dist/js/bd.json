@@ -1,0 +1,92 @@
+{
+  "response": [
+    {
+      "itemTitle": "Blog afrianska",
+      "src": "./assets/img/BlogAfrianska.PNG",
+      "labels": {
+        "madeLabelHtml": "HTML",
+        "madeLabelSass": "SASS"
+      }
+    },
+    {
+      "itemTitle": "Landing Simple booking",
+      "src": "./assets/img/chatAppChallenge.PNG",
+      "labels": {
+        "madeLabelHtml": "HTML",
+        "madeLabelSass": "SASS"
+      }
+    },
+    {
+      "itemTitle": "Dog CRUD",
+      "src": "./assets/img/DogCrudChallenge.PNG",
+      "labels": {
+        "madeLabelHtml": "HTML",
+        "madeLabelSass": "SASS",
+        "madeLabelJs": "JavaScript"
+      }
+    },
+    {
+      "itemTitle": "Listing job finder",
+      "src": "./assets/img/JubListingChallengeWithVue.PNG",
+      "labels": {
+        "madeLabelVue": "VUE (CDN)",
+        "madeLabelCss": "CSS",
+        "madeLabelJs": "JavaScript"
+      }
+    },
+    {
+      "itemTitle": "Pachaqtec Marketplace",
+      "src": "./assets/img/PachaQtecEcommerceApp.PNG",
+      "labels": {
+        "madeLabelVue": "VUE (CLI)",
+        "madeLabelVuex": "VUEX (CLI)",
+        "madeLabelCss": "CSS",
+        "madeLabelJs": "JavaScript"
+      }
+    },
+    {
+      "itemTitle": "Pacha Video",
+      "src": "./assets/img/PachaTV.PNG",
+      "labels": {
+        "madeLabelVue": "VUE (CLI)",
+        "madeLabelSass": "SASS",
+        "madeLabelJs": "JavaScript"
+      }
+    },
+    {
+      "itemTitle": "Platzi exchange",
+      "src": "./assets/img/PlatziExChangeVue.PNG",
+      "labels": {
+        "madeLabelVue": "VUE (CLI)",
+        "madeLabelCss": "CSS",
+        "madeLabelJs": "JavaScript"
+      }
+    },
+    {
+      "itemTitle": "Platzi video",
+      "src": "./assets/img/PlatziVideoJSVanilla.PNG",
+      "labels": {
+        "madeLabelHtml": "HTML",
+        "madeLabelCss": "CSS",
+        "madeLabelJs": "JavaScript"
+      }
+    },
+    {
+      "itemTitle": "To do list",
+      "src": "./assets/img/ToDoListApp.PNG",
+      "labels": {
+        "madeLabelHtml": "HTML",
+        "madeLabelCss": "CSS",
+        "madeLabelJs": "JavaScript"
+      }
+    },
+    {
+      "itemTitle": "Upload files challenge app",
+      "src": "./assets/img/UploadFilesChallenge.PNG",
+      "labels": {
+        "madeLabelHtml": "HTML",
+        "madeLabelCss": "CSS"
+      }
+    }
+  ]
+}
