@@ -11,6 +11,31 @@ import "../css/main.css";
   const $menuLinks = Array.from(document.querySelectorAll(".menu-link"));
   const $btnReturnTop = document.querySelector("#js_return-top");
   const $portFolioContainer = document.querySelector("#js_portfolio-container");
+  const $btnSendEmail = document.querySelector("#js_send-mail");
+  //Modal DOM
+  const $modalConstruction = document.querySelector(".modal.construction");
+  const $btnModalOk = document.querySelector("#js_btn-ok");
+  const $modalOpacity = document.querySelector(".modal-opacity");
+
+  /*
+   * When a user click en send email appear modal of construction
+   */
+  $btnSendEmail.addEventListener("click", () => {
+    $modalOpacity.classList.add("active");
+    $modalConstruction.classList.add("fade-in");
+    $modalConstruction.classList.remove("fade-out");
+    document.body.style.overflow = "hidden";
+  });
+
+  /*
+   * When a user click a button "OK" close modal and dessapear
+   */
+  $btnModalOk.addEventListener("click", () => {
+    $modalConstruction.classList.remove("fade-in");
+    $modalConstruction.classList.add("fade-out");
+    $modalOpacity.classList.remove("active");
+    document.body.style.overflow = "visible";
+  });
 
   /*
    * Function get information for my own bd.json

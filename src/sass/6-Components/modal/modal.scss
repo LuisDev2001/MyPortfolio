@@ -1,9 +1,25 @@
 .modal {
   background: var(--white);
   width: 90%;
-  margin: 0 auto;
+  margin: auto;
   color: var(--dark-three);
   padding: 15px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-radius: 4px;
+  transform: translateY(-700px);
+  &.fade-in {
+    //Active Modal
+    animation: fadeIn .5s forwards;
+    animation-delay: .6s;
+  }
+  &.fade-out {
+    //Unactive Modal
+    animation: fadeOut .5s forwards;
+  }
   &-opacity {
     background: #000000;
     opacity: 0;
@@ -16,6 +32,7 @@
     visibility: hidden;
     z-index: 0;
     transition: 0.5s ease all;
+    transition-delay: .5s;
     &.active {
       height: 100vh;
       z-index: 99;
@@ -27,7 +44,32 @@
   &-text {
     margin: 0 0 10px 0;
   }
+  &-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
   &-actions {
     padding: 0;
+    text-align: right;
+    &-ok {
+      font-size: 14px;
+      font-family: var(--font-family-sans-serif);
+      border: 1px solid #cccccc;
+      background: var(--gray-dark);
+      color: var(--white);
+      width: 100px;
+      height: 35px;
+      border-radius: 20px;
+      transition: opacity .3s ease-in;
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 480px;
+    width: 100%;
   }
 }

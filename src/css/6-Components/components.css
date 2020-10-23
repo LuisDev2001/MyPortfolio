@@ -1,9 +1,23 @@
 .modal {
   background: var(--white);
   width: 90%;
-  margin: 0 auto;
+  margin: auto;
   color: var(--dark-three);
   padding: 15px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-radius: 4px;
+  transform: translateY(-700px);
+}
+.modal.fade-in {
+  animation: fadeIn 0.5s forwards;
+  animation-delay: 0.6s;
+}
+.modal.fade-out {
+  animation: fadeOut 0.5s forwards;
 }
 .modal-opacity {
   background: #000000;
@@ -17,6 +31,7 @@
   visibility: hidden;
   z-index: 0;
   transition: 0.5s ease all;
+  transition-delay: 0.5s;
 }
 .modal-opacity.active {
   height: 100vh;
@@ -27,10 +42,35 @@
 .modal-title, .modal-text {
   margin: 0 0 10px 0;
 }
+.modal-title {
+  font-size: 18px;
+  font-weight: 600;
+}
 .modal-actions {
   padding: 0;
+  text-align: right;
+}
+.modal-actions-ok {
+  font-size: 14px;
+  font-family: var(--font-family-sans-serif);
+  border: 1px solid #cccccc;
+  background: var(--gray-dark);
+  color: var(--white);
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  transition: opacity 0.3s ease-in;
+}
+.modal-actions-ok:hover {
+  opacity: 0.8;
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 480px;
+    width: 100%;
+  }
+}
 .header {
   width: 100%;
   height: 56px;
