@@ -1,9 +1,15 @@
 <?php
- $destino = "luisqrja@correo.com";
- $nombre = $_POST["nombre"];
- $apellido = $_POST['apell'];
- $correo = $_POST["correo"];
+
+ $destination = "luisqrja@gmail.com";
+ $name = $_POST["name"];
+ $email = $_POST["email"];
+ $phone = $_POST["phone"];
  $mensaje = $_POST["message"];
- $contenido = "Nombre: ".$nombre."\nCorreo: ".$correo."\nMensaje: ".$mensaje;
- mail($destino,"Contacto", $contenido);
+
+ /**
+  * Create content to send mail
+  */
+ $content = "Nombre: ".$nombre."\nCorreo: ".$correo."\nMensaje: ".$mensaje;
+ mail($destination,"!Hola, quiero trabajar contigo¡, $content);
+
 ?>

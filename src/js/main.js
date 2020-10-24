@@ -72,7 +72,7 @@ import "../css/main.css";
         </div>
       `;
     }
-    const $madeWrapper = document.querySelectorAll(".item-information-made");
+    const $madeWrapper = Array.from(document.querySelectorAll(".item-information-made"));
     $madeWrapper.forEach((element, i) => {
       const div = document.createElement("div");
       div.setAttribute("class", "labels");
