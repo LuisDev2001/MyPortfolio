@@ -62,7 +62,7 @@
   transition: opacity 0.3s ease-in;
 }
 .modal-actions-ok:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .content-loader {
