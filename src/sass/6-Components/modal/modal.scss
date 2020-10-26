@@ -67,8 +67,28 @@
     }
   }
 }
+// Loader
+.content-loader {
+  width: 90%;
+  height: 200px;
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  background: var(--white);
+  z-index: 99;
+  border-radius: 4px;
+
+  &-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--green);
+  }
+}
 @media screen and (min-width: 768px) {
-  .modal {
+  .modal,.content-loader {
     max-width: 480px;
     width: 100%;
   }
