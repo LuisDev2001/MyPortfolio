@@ -61,7 +61,7 @@ import "../css/main.css";
       $portFolioContainer.innerHTML += `
         <div class="item">
           <div class="item-image">
-            <img loading="lazy" src="${d.src}" alt="Afrianska blog" />
+            <img loading="lazy" src="${d.src}" alt="Image of project if no loader this" />
           </div>
           <div class="item-information">
             <h3>${d.itemTitle}</h3>
