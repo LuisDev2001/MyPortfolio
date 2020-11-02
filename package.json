@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:css-dev": "sass --watch src/sass:src/css",
+    "build:plugin": "webpack --config webpack.config.js",
     "build:project": "webpack-dev-server --config webpack.config.js --open"
   },
   "repository": {

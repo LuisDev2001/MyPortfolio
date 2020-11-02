@@ -38,11 +38,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: "Mi portafolio",
-      template: path.resolve(__dirname, 'src/index.html'),
-      /*minify: {
-        //Minificar mi html para producción
-        collapseWhitespace: true,
-      }*/
+      template: path.resolve(__dirname, 'src/index.html')
     })
   ]
 };
