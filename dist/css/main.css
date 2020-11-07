@@ -558,6 +558,14 @@ footer {
   padding: 0 15px;
 }
 
+.show-scroll {
+  overflow: auto;
+}
+
+.hide-scroll {
+  overflow: hidden;
+}
+
 .btn {
   border-radius: 100px;
   border: 0;

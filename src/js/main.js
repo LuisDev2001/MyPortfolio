@@ -5,6 +5,7 @@ import "../css/main.css";
 
 (function init() {
   console.log("JS Connect!! :)");
+  const $body = document.body;
   const $burgerButton = document.querySelector("#js_burger-button");
   const $header = document.querySelector("#js_header");
   const $menu = document.querySelector("#js_menu");
@@ -13,29 +14,39 @@ import "../css/main.css";
   const $portFolioContainer = document.querySelector("#js_portfolio-container");
   const $btnSendEmail = document.querySelector("#js_send-mail");
   //Modal DOM
-  const $modalConstruction = document.querySelector(".modal.construction");
-  const $btnModalOk = document.querySelector("#js_btn-ok");
   const $modalOpacity = document.querySelector(".modal-opacity");
   //Form DOM 
   const $form = document.querySelector("#js_form-data");
+
   /*
    * When a user click en send email appear modal of construction
    */
   $btnSendEmail.addEventListener("click", () => {
     $modalOpacity.classList.add("active");
-    $modalConstruction.classList.add("fade-in");
-    $modalConstruction.classList.remove("fade-out");
-    document.body.style.overflow = "hidden";
+    $body.classList.add("hide-scroll");
+    $body.appendChild(
+      createModalCustom(
+        "Estamos en construcción",
+        "El servicio para enviar un mail aun esta en construcción, agradezo tu visita",
+        "fade-in")
+    );
   });
 
   /*
-   * When a user click a button "OK" close modal and dessapear
+   * When a user click a button "OK", close modal and dessapear
    */
-  $btnModalOk.addEventListener("click", () => {
-    $modalConstruction.classList.remove("fade-in");
-    $modalConstruction.classList.add("fade-out");
-    $modalOpacity.classList.remove("active");
-    document.body.style.overflow = "visible";
+  $body.addEventListener("click", (event) => {
+    if (event.target.id === "js_btn-ok") {
+      const $modalConstruction = document.querySelector(".modal.construction");
+      $modalConstruction.classList.remove("fade-in");
+      $modalConstruction.classList.add("fade-out");
+      $modalOpacity.classList.remove("active");
+      $body.classList.remove("hide-scroll");
+      //Time for desappear modal of DOM
+      setTimeout(() => {
+        $body.removeChild($modalConstruction);
+      }, 100);
+    }
   });
 
   /*
@@ -212,4 +223,33 @@ import "../css/main.css";
     $inputs.forEach((input) => input.value = "")
     $textArea.value = "";
   }
+
+  /**
+   * Function to create a modal custom
+   */
+  const createModalCustom = (title, description, classAnimation) => {
+    const modal = `
+      <div class="modal construction ${classAnimation}">
+        <h2 class="modal-title">${title}</h2>
+        <p class="modal-text">${description}</p>
+        <section class="modal-actions">
+          <button class="modal-actions-ok" id="js_btn-ok">OK</button>
+        </section>
+      </div>
+    `;
+    const htmlConverted = convertHtmlString(modal);
+    return htmlConverted;
+  }
+
+  /**
+   * Convert template string to html format
+   * @param {*} HtmlString 
+   */
+  const convertHtmlString = (HtmlString) => {
+    const html = document.implementation.createHTMLDocument();
+    html.body.innerHTML += HtmlString;
+    return html.body.children[0];
+  }
+
+
 })();

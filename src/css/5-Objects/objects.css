@@ -5,6 +5,10 @@ footer {
   padding: 0 15px;
 }
 
+.hide-scroll {
+  overflow: hidden;
+}
+
 .btn {
   border-radius: 100px;
   border: 0;

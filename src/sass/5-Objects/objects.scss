@@ -4,6 +4,9 @@ section,
 footer {
   padding: 0 15px;
 }
+.hide-scroll {
+  overflow: hidden;
+}
 //Styles for primary, secondary button
 .btn {
   border-radius: 100px;
