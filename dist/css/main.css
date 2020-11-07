@@ -540,6 +540,7 @@ li {
 a {
   color: #010101;
   text-decoration: none;
+  outline: none;
 }
 
 button {
@@ -556,10 +557,6 @@ header,
 section,
 footer {
   padding: 0 15px;
-}
-
-.show-scroll {
-  overflow: auto;
 }
 
 .hide-scroll {
@@ -679,6 +676,7 @@ footer {
 @keyframes fadeIn {
   0% {
     transform: translateY(-800px);
+    opacity: 0;
   }
   40% {
     transform: translateY(40px);
@@ -691,15 +689,30 @@ footer {
   }
   100% {
     transform: translateY(0px);
+    opacity: 1;
   }
 }
 /*Animation for modal fadeOut*/
 @keyframes fadeOut {
   0% {
     transform: translateY(0px);
+    opacity: 0;
   }
   100% {
     transform: translateY(-800px);
+    opacity: 1;
+  }
+}
+.animate-text {
+  animation: animateText 0.5s infinite;
+}
+
+@keyframes animateText {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
   }
 }
 /*Tablet*/
@@ -1164,11 +1177,21 @@ footer {
   height: 36px;
 }
 
+.skills {
+  width: 100%;
+  text-align: center;
+}
+.skills p {
+  display: inline-flex;
+  font-size: 25px;
+}
+
 @media screen and (min-width: 992px) {
   .aboutMe {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     max-width: 1100px;
     margin: 0 auto;
   }

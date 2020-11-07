@@ -15,7 +15,7 @@ import "../css/main.css";
   const $btnSendEmail = document.querySelector("#js_send-mail");
   //Modal DOM
   const $modalOpacity = document.querySelector(".modal-opacity");
-  //Form DOM 
+  //Form DOM
   const $form = document.querySelector("#js_form-data");
 
   /*
@@ -28,7 +28,8 @@ import "../css/main.css";
       createModalCustom(
         "Estamos en construcción",
         "El servicio para enviar un mail aun esta en construcción, agradezo tu visita",
-        "fade-in")
+        "fade-in"
+      )
     );
   });
 
@@ -83,7 +84,9 @@ import "../css/main.css";
         </div>
       `;
     }
-    const $madeWrapper = Array.from(document.querySelectorAll(".item-information-made"));
+    const $madeWrapper = Array.from(
+      document.querySelectorAll(".item-information-made")
+    );
     $madeWrapper.forEach((element, i) => {
       const div = document.createElement("div");
       div.setAttribute("class", "labels");
@@ -107,7 +110,7 @@ import "../css/main.css";
     $menuLinks.forEach((element) => {
       element.classList.remove("is-active");
     });
-  }
+  };
 
   /*
    * Function to put class 'fixed'
@@ -115,7 +118,7 @@ import "../css/main.css";
   const headerFixed = () => {
     let y = window.scrollY;
     y > 56 ? $header.classList.add("fixed") : $header.classList.remove("fixed");
-  }
+  };
 
   /*
    *Function showHideMenu
@@ -123,7 +126,7 @@ import "../css/main.css";
   const showHideMenu = (e) => {
     e.preventDefault();
     $menu.classList.toggle("is-active");
-  }
+  };
 
   /*
    * Function returnTop
@@ -135,7 +138,7 @@ import "../css/main.css";
       behavior: "smooth",
     });
     removeClassIsActive();
-  }
+  };
 
   window.addEventListener("scroll", () => {
     let y = window.scrollY;
@@ -192,16 +195,16 @@ import "../css/main.css";
     //Clean inputs
     cleanInputs();
     /**
-      * In this section add to code for put a loader or something for async function
-      */
+     * In this section add to code for put a loader or something for async function
+     */
   });
 
   /**
    * Create this function to create a object to send service
-   * @param {*} name 
-   * @param {*} email 
-   * @param {*} phone 
-   * @param {*} message 
+   * @param {*} name
+   * @param {*} email
+   * @param {*} phone
+   * @param {*} message
    */
   const createObject = (name, email, phone, message) => {
     let ObjectToSendService = {
@@ -212,7 +215,7 @@ import "../css/main.css";
     };
     console.log(ObjectToSendService);
     return ObjectToSendService;
-  }
+  };
 
   /**
    * Function to clean input of my form
@@ -220,9 +223,9 @@ import "../css/main.css";
   const cleanInputs = () => {
     const $inputs = document.querySelectorAll("input");
     const $textArea = document.querySelector("textarea");
-    $inputs.forEach((input) => input.value = "")
+    $inputs.forEach((input) => (input.value = ""));
     $textArea.value = "";
-  }
+  };
 
   /**
    * Function to create a modal custom
@@ -239,17 +242,15 @@ import "../css/main.css";
     `;
     const htmlConverted = convertHtmlString(modal);
     return htmlConverted;
-  }
+  };
 
   /**
    * Convert template string to html format
-   * @param {*} HtmlString 
+   * @param {*} HtmlString
    */
   const convertHtmlString = (HtmlString) => {
     const html = document.implementation.createHTMLDocument();
     html.body.innerHTML += HtmlString;
     return html.body.children[0];
-  }
-
-
+  };
 })();
