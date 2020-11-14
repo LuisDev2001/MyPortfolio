@@ -22,12 +22,14 @@
       display: flex;
       padding: 0;
       margin: 48px 0 0 0;
+      flex-wrap: wrap;
       div {
         width: auto;
         height: auto;
         display: flex;
+        margin: 6px 0 0 0;
         &:first-child {
-          margin: 0 8px 0 0;
+          margin: 6px 6px 0 0;
         }
         .btn {
           padding: 8px 24px;
@@ -37,14 +39,82 @@
     }
   }
 }
+//Skills
 .skills {
   width: 100%;
-  text-align: center;
-  p {
-    display: inline-flex;
-    font-size: 25px;
+  padding: 0;
+}
+.progressBar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  &-text {
+    display: block;
+    text-align: left;
+    margin: 0 0 10px 0;
+  }
+  &-progress {
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid var(--white);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px 0 0;
+    div {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      transition: all 1.5s ease-in-out;
+      transition-delay: 0.2s;
+      &.HTML {
+        background: #e96228;
+      }
+      &.CSS {
+        background: #2862e9;
+      }
+      &.JAVASCRIPT {
+        background: #efd81d;
+      }
+      &.VUE {
+        background: #3fb27f;
+      }
+      &.GIT {
+        background: #eb4d28;
+      }
+      &.SASS {
+        background: #c76494;
+      }
+    }
+  }
+  &-percent {
+    z-index: 11;
+    font-weight: bold;
+    color: var(--white);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    transition-delay: 0.2s;
+    &.animate-percemt {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 }
+
+//Tablet
+@media screen and (min-width: 768px) {
+  .progressBar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 //Desktop
 @media screen and (min-width: 992px) {
   .aboutMe {

@@ -1,4 +1,9 @@
-//Tabler
+.contact-me {
+  &-wrapper {
+    padding: 0;
+  }
+}
+//Tablet
 @media screen and (min-width: 768px) {
   .contact-me {
     padding: 0;

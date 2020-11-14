@@ -17,6 +17,8 @@ import "../css/main.css";
   const $modalOpacity = document.querySelector(".modal-opacity");
   //Form DOM
   const $form = document.querySelector("#js_form-data");
+  //Section skills element
+  const $wrapperSkills = document.querySelector("#js_progress-section");
 
   /*
    * When a user click en send email appear modal of construction
@@ -27,7 +29,7 @@ import "../css/main.css";
     $body.appendChild(
       createModalCustom(
         "Estamos en construcción",
-        "El servicio para enviar un mail aun esta en construcción, agradezo tu visita",
+        "El servicio para enviar un mail aún esta en construcción, agradezco tu visita",
         "fade-in"
       )
     );
@@ -194,9 +196,6 @@ import "../css/main.css";
     createObject(name, email, phone, message);
     //Clean inputs
     cleanInputs();
-    /**
-     * In this section add to code for put a loader or something for async function
-     */
   });
 
   /**
@@ -213,7 +212,6 @@ import "../css/main.css";
       phone: phone,
       message: message,
     };
-    console.log(ObjectToSendService);
     return ObjectToSendService;
   };
 
@@ -253,4 +251,54 @@ import "../css/main.css";
     html.body.innerHTML += HtmlString;
     return html.body.children[0];
   };
+
+  /**
+   * Inject template for skills
+   * @param $content
+   */
+  const printSkills = ($content) => {
+    /**
+     * Array of skills names and percent
+     */
+    let arrSkills = [
+      ["HTML", "90%"],
+      ["CSS", "85%"],
+      ["JAVASCRIPT", "80%"],
+      ["VUE", "70%"],
+      ["SASS", "80%"],
+      ["GIT", "85%"],
+    ];
+
+    arrSkills.forEach((skill) => {
+      $content.innerHTML += `
+        <div class="progressBar-content">
+          <span class="progressBar-text"> ${skill[0]} </span>
+          <div class="progressBar-progress">
+            <div class="${skill[0]}" style="width: 0;"></div>
+            <span class="progressBar-percent">${skill[1]}</span>
+          </div>
+        </div>
+      `;
+      window.addEventListener("scroll", () => {
+        let scrollTop = document.documentElement.scrollTop;
+        let $progressBarItems = Array.from(
+          document.querySelectorAll(".progressBar-progress > div")
+        );
+        let $percents = document.querySelectorAll(".progressBar-percent");
+        $progressBarItems.forEach((item, index) => {
+          let heightItem = $content.offsetTop;
+          let percent = $percents[index];
+          if (heightItem - 450 < scrollTop) {
+            item.style.width = `${percent.textContent.trim()}`;
+            percent.classList.add("animate-percemt");
+          } else {
+            item.style.width = "0%";
+            percent.classList.remove("animate-percemt");
+          }
+        });
+      });
+    });
+  };
+  //Exec my print skills
+  printSkills($wrapperSkills);
 })();

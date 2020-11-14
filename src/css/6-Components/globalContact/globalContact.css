@@ -1,3 +1,7 @@
+.contact-me-wrapper {
+  padding: 0;
+}
+
 @media screen and (min-width: 768px) {
   .contact-me {
     padding: 0;

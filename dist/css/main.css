@@ -991,15 +991,17 @@ footer {
   overflow: hidden;
 }
 .banner-video {
+  display: none;
+}
+.banner-image-mobile {
   width: 100%;
   height: 100vh;
+  background: var(--dark);
 }
-.banner-video video {
-  position: relative;
-  opacity: 0.3;
-  min-width: 100%;
-  min-height: 100%;
-  max-width: unset;
+.banner-image-mobile img {
+  object-fit: cover;
+  height: 100%;
+  filter: brightness(0.35);
 }
 .banner-text {
   position: absolute;
@@ -1022,6 +1024,21 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .banner-image-mobile {
+    display: none;
+  }
+  .banner-video {
+    display: block;
+    width: 100%;
+    height: 100vh;
+  }
+  .banner-video video {
+    position: relative;
+    opacity: 0.3;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: unset;
+  }
   .banner-text p {
     font-size: 65px;
   }
@@ -1163,14 +1180,16 @@ footer {
   display: flex;
   padding: 0;
   margin: 48px 0 0 0;
+  flex-wrap: wrap;
 }
 .aboutMe-information-buttons div {
   width: auto;
   height: auto;
   display: flex;
+  margin: 6px 0 0 0;
 }
 .aboutMe-information-buttons div:first-child {
-  margin: 0 8px 0 0;
+  margin: 6px 6px 0 0;
 }
 .aboutMe-information-buttons div .btn {
   padding: 8px 24px;
@@ -1179,13 +1198,78 @@ footer {
 
 .skills {
   width: 100%;
-  text-align: center;
-}
-.skills p {
-  display: inline-flex;
-  font-size: 25px;
+  padding: 0;
 }
 
+.progressBar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+}
+.progressBar-text {
+  display: block;
+  text-align: left;
+  margin: 0 0 10px 0;
+}
+.progressBar-progress {
+  width: 100%;
+  height: 30px;
+  border-radius: 30px;
+  border: 1px solid var(--white);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px 0 0;
+}
+.progressBar-progress div {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: all 1.5s ease-in-out;
+  transition-delay: 0.2s;
+}
+.progressBar-progress div.HTML {
+  background: #e96228;
+}
+.progressBar-progress div.CSS {
+  background: #2862e9;
+}
+.progressBar-progress div.JAVASCRIPT {
+  background: #efd81d;
+}
+.progressBar-progress div.VUE {
+  background: #3fb27f;
+}
+.progressBar-progress div.GIT {
+  background: #eb4d28;
+}
+.progressBar-progress div.SASS {
+  background: #c76494;
+}
+.progressBar-percent {
+  z-index: 11;
+  font-weight: bold;
+  color: var(--white);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+  transition-delay: 0.2s;
+}
+.progressBar-percent.animate-percemt {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .progressBar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media screen and (min-width: 992px) {
   .aboutMe {
     display: flex;
@@ -1247,6 +1331,10 @@ footer {
 .myServices-card p {
   line-height: 1.7;
   font-size: 16px;
+}
+
+.contact-me-wrapper {
+  padding: 0;
 }
 
 @media screen and (min-width: 768px) {

@@ -6,14 +6,16 @@
   justify-content: center;
   overflow: hidden;
   &-video {
+    display: none;
+  }
+  &-image-mobile {
     width: 100%;
     height: 100vh;
-    video {
-      position: relative;
-      opacity: 0.3;
-      min-width: 100%;
-      min-height: 100%;
-      max-width: unset;
+    background: var(--dark);
+    img {
+      object-fit: cover;
+      height: 100%;
+      filter: brightness(0.35);
     }
   }
   &-text {
@@ -40,6 +42,22 @@
 //Tablet
 @media screen and (min-width: 768px) {
   .banner {
+    &-image-mobile {
+      display: none;
+    }
+    &-video {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      video {
+        position: relative;
+        opacity: 0.3;
+        min-width: 100%;
+        min-height: 100%;
+        max-width: unset;
+      }
+    }
+
     &-text {
       p {
         font-size: 65px;
